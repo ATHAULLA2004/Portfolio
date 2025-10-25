@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Athaullah | Developer Portfolio</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Particles.js -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+  <!-- Typed.js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade { animation: fadeIn 1.2s ease-in-out forwards; }
+
+    #particles-js {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: radial-gradient(circle at top left, #0f172a, #1e293b, #020617);
+    }
+
+    .nav-btn:hover {
+      transform: scale(1.1);
+      transition: all 0.3s;
+      color: #38bdf8;
+    }
+
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+
+<body class="bg-gray-900 text-white font-sans overflow-x-hidden">
+
+  <!-- Particle Background -->
+  <div id="particles-js"></div>
+
+  <!-- Navbar -->
+  <nav class="fixed w-full top-0 left-0 bg-transparent backdrop-blur-md z-20 flex flex-wrap justify-center py-4 space-x-4 sm:space-x-8 text-base sm:text-lg font-medium">
+    <button class="nav-btn" onclick="showSection('home')">Home</button>
+    <button class="nav-btn" onclick="showSection('about')">About</button>
+    <button class="nav-btn" onclick="showSection('projects')">Projects</button>
+    <button class="nav-btn" onclick="showSection('skills')">Skills</button>
+    <button class="nav-btn" onclick="showSection('contact')">Contact</button>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center animate-fade">
+    <h1 class="text-6xl font-extrabold mb-4 text-cyan-400 drop-shadow-lg">
+      <span id="typed-name"></span>
+    </h1>
+    <p class="text-2xl text-gray-300 font-light mb-8">Frontend Developer</p>
+
+    <div class="flex space-x-6">
+      <a href="https://github.com/ATHAULLA2004" target="_blank" class="px-6 py-3 rounded-lg bg-cyan-600 hover:bg-cyan-500 shadow-lg shadow-cyan-500/50 transition-all">GitHub</a>
+      <a href="assets/ATHAULLA RESUME (1).pdf" download class="px-6 py-3 rounded-lg bg-fuchsia-600 hover:bg-fuchsia-500 shadow-lg shadow-fuchsia-500/50 transition-all">
+         Download Resume
+</a>
+</a>
+</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="hidden min-h-screen flex flex-col justify-center items-center animate-fade text-center px-6">
+    <h2 class="text-4xl font-bold text-fuchsia-400 mb-4">About Me</h2>
+    <p class="text-gray-300 max-w-2xl leading-relaxed">
+      I’m <span class="text-cyan-400 font-semibold">Athaullah</span>, a passionate frontend developer focused on building visually stunning, interactive, and responsive web experiences using HTML, Tailwind CSS, and React JS.
+    </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="hidden min-h-screen flex flex-col justify-center items-center animate-fade text-center px-6">
+    <h2 class="text-4xl font-bold text-yellow-400 mb-4">Projects</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+
+      <div class="bg-gray-800 p-6 rounded-xl hover:scale-105 transform transition-all duration-300 shadow-lg">
+        <h3 class="text-2xl text-cyan-400 font-semibold mb-2">Online Booking Shop</h3>
+        <p class="text-gray-300 text-sm">A responsive online booking web app with smooth UI and dark mode using Tailwind CSS.</p>
+      </div>
+
+      <div class="bg-gray-800 p-6 rounded-xl hover:scale-105 transform transition-all duration-300 shadow-lg">
+        <h3 class="text-2xl text-cyan-400 font-semibold mb-2">React Validation Form (Yup)</h3>
+        <p class="text-gray-300 text-sm">React JS form with validation using Yup library for clean, user-friendly data entry.</p>
+      </div>
+
+      <div class="bg-gray-800 p-6 rounded-xl hover:scale-105 transform transition-all duration-300 shadow-lg">
+        <h3 class="text-2xl text-cyan-400 font-semibold mb-2">Tailwind CSS UI Design</h3>
+        <p class="text-gray-300 text-sm">A modern UI layout built entirely with Tailwind CSS for fast, flexible styling.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="hidden min-h-screen flex flex-col justify-center items-center animate-fade text-center px-6">
+    <h2 class="text-4xl font-bold text-blue-400 mb-8">Skills</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl">
+
+      <div class="bg-gray-800 p-6 rounded-xl hover:scale-105 transform transition-all duration-300 shadow-lg">
+        <h3 class="text-2xl font-semibold text-cyan-400 mb-2">HTML</h3>
+        <p class="text-gray-300 text-sm">Strong knowledge of semantic HTML for clean and accessible design.</p>
+      </div>
+
+      <div class="bg-gray-800 p-6 rounded-xl hover:scale-105 transform transition-all duration-300 shadow-lg">
+        <h3 class="text-2xl font-semibold text-cyan-400 mb-2">CSS</h3>
+        <p class="text-gray-300 text-sm">Skilled in creating modern layouts, animations, and responsive styles.</p>
+      </div>
+
+      <div class="bg-gray-800 p-6 rounded-xl hover:scale-105 transform transition-all duration-300 shadow-lg">
+        <h3 class="text-2xl font-semibold text-cyan-400 mb-2">Tailwind CSS</h3>
+        <p class="text-gray-300 text-sm">Expert at building elegant and fast UIs using Tailwind utility-first CSS.</p>
+      </div>
+
+      <div class="bg-gray-800 p-6 rounded-xl hover:scale-105 transform transition-all duration-300 shadow-lg">
+        <h3 class="text-2xl font-semibold text-cyan-400 mb-2">React JS</h3>
+        <p class="text-gray-300 text-sm">Experienced in building interactive UIs and form validation using Yup.</p>
+      </div>
+
+      <div class="bg-gray-800 p-6 rounded-xl hover:scale-105 transform transition-all duration-300 shadow-lg">
+        <h3 class="text-2xl font-semibold text-cyan-400 mb-2">Marketing</h3>
+        <p class="text-gray-300 text-sm">camp coordinates,camp leader</p>
+      </div>
+
+      <div class="bg-gray-800 p-6 rounded-xl hover:scale-105 transform transition-all duration-300 shadow-lg">
+        <h3 class="text-2xl font-semibold text-cyan-400 mb-2">Theme Coder & Letter</h3>
+        <p class="text-gray-300 text-sm">Designing and coding professional themes and modern letter styles.</p>
+      </div>
+
+      <div class="bg-gray-800 p-6 rounded-xl hover:scale-105 transform transition-all duration-300 shadow-lg">
+        <h3 class="text-2xl font-semibold text-cyan-400 mb-2">Team Coordinator</h3>
+        <p class="text-gray-300 text-sm">Organizing, guiding, and synchronizing team efforts efficiently.</p>
+      </div>
+
+      <div class="bg-gray-800 p-6 rounded-xl hover:scale-105 transform transition-all duration-300 shadow-lg">
+        <h3 class="text-2xl font-semibold text-cyan-400 mb-2">Team Leader</h3>
+        <p class="text-gray-300 text-sm">Managing projects and leading teams toward shared success.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="hidden min-h-screen flex flex-col justify-center items-center animate-fade text-center space-y-6">
+    <h2 class="text-4xl font-bold text-green-400 mb-2">Contact</h2>
+    <p class="text-gray-300">Let’s connect! Reach out for collaborations or just to say hi 👋</p>
+    <a href="mailto:athaulla697@gmail.com" class="px-6 py-3 bg-green-600 hover:bg-green-500 rounded-lg shadow-lg shadow-green-500/50">
+      Email Me: athaulla697@gmail.com
+    </a>
+  </section>
+
+  <script>
+    const sections = ['home', 'about', 'projects', 'skills', 'contact'];
+    function showSection(id) {
+      sections.forEach(sec => {
+        const el = document.getElementById(sec);
+        const btn = document.querySelector(`button[onclick="showSection('${sec}')"]`);
+        if (sec === id) {
+          el.classList.remove('hidden');
+          el.classList.add('animate-fade');
+          btn.classList.add('text-cyan-400');
+        } else {
+          el.classList.add('hidden');
+          el.classList.remove('animate-fade');
+          btn.classList.remove('text-cyan-400');
+        }
+      });
+    }
+    document.addEventListener("DOMContentLoaded", () => showSection('home'));
+
+    // Typed.js animation
+    const typed = new Typed("#typed-name", {
+      strings: ["ATHAULLAH DEVELOPER"],
+      typeSpeed: 100,
+      backSpeed: 40,
+      loop: false,
+      showCursor: false,
+    });
+
+    // Particles background
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 80 },
+        color: { value: "#38bdf8" },
+        shape: { type: "circle" },
+        opacity: { value: 0.6 },
+        size: { value: 3 },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: "#38bdf8",
+          opacity: 0.3,
+          width: 1
+        },
+        move: { enable: true, speed: 2, out_mode: "bounce" }
+      },
+      interactivity: {
+        events: {
+          onhover: { enable: true, mode: "repulse" },
+          onclick: { enable: true, mode: "push" }
+        },
+        modes: { repulse: { distance: 100 }, push: { particles_nb: 4 } }
+      },
+      retina_detect: true
+    });
+  </script>
+
+</body>
+</html>
