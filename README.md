@@ -1,1 +1,1 @@
-https://github.com/ATHAULLA2004/Portfolio
+ https://athaulla2004.github.io/Portfolio/
